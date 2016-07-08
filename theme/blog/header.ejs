@@ -9,12 +9,12 @@
         </div>
         <input type="checkbox" id="idoc_nav" />
         <div class="menu_tree">
-        <%- menu_html %>    
+        <%- menu_html %>
         </div>
         
-        <% if(pkg&&pkg.repository&&pkg.repository.url) {%>
+        <!--<% if(pkg&&pkg.repository&&pkg.repository.url) {%>
         <div class="forkgithub"><a target="_blank" href="<%=pkg.repository.url%>">fork on github</a></div>
-        <%}%>
+        <%}%>-->
 
         <section class="idoc_nav_btn">
             <label for="idoc_nav"><span></span></label>
@@ -26,9 +26,12 @@
 
 <% if(index){ %>
 <div class="bs-docs-header">
-    <div class="container">
-        <h1><%= title %></h1>
-        <p><%= pkg.description %></p>
+    <div class="bs-docs-header new-back">
+        <div class="container">
+            <h1><%= title %></h1>
+            <p><%= pkg.description %></p>
+            <div>ZhuFengPeiXun Style</div>
+        </div>
     </div>
 </div>
 <% } %>
